@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.app .date {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+}
+.app .date p {
+  padding: 0 2px;
+}
+
+.app .form-input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.app .form-input .icon {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  font-size: 25px;
+  color: #4b00ff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app form input {
+  border: 2px solid #eee;
+  padding: 5px 10px 5px 50px;
+  font-size: 18px;
+  line-height: 30px;
+  outline: 0;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.app .task-row {
+  border: 2px solid #eee;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 8px 0;
+  width: 94%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app .task-row .icon {
+  font-size: 25px;
+  color: #4b00ff;
+}
+
+.app .task-row p {
+  text-transform: capitalize;
+}
+
+.completed {
+  background-color: #eee;
+  text-decoration: line-through;
+}
+
+.app .length {
+  margin: 1rem 0;
+}
