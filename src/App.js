@@ -16,6 +16,8 @@ function App() {
       completed: false,
     };
 
+   
+
     setTasks([...tasks, addTask]);
     setInput("");
   };
@@ -52,12 +54,14 @@ function App() {
 
         <form onSubmit={handleSubmit}>
           <div className="form-input">
-            <AiOutlinePlus className="icon" />
             <input
               type="text"
               placeholder="Enter a task"
               value={input}
               onChange={(e) => setInput(e.target.value)}
+            />
+            <AiOutlinePlus className="icon" 
+            onClick={handleSubmit}
             />
           </div>
         </form>
